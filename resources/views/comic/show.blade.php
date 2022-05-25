@@ -1,7 +1,7 @@
 
 <a href="{{ route('comic.index') }}">BACK</a>
-@dump($item['*'])
-{{-- {{$item->id}} --}}
+{{-- @dump($comic) --}}
+{{$comic->description}}
 
 
 
