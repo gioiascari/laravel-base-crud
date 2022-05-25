@@ -18,7 +18,8 @@ class CreateFumettiComicsTable extends Migration
         Schema::create('fumetti_comics', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('description');
+            $table->longText('description');
+            $table->string('thumb');
             $table->string('price');
             $table->string('series');
             $table->date('sale_date');
