@@ -11,8 +11,9 @@
     @forelse ($data as $item)
 
         <h1>Title: {{$item['title']}}</h1>
+
         <p>Description: {{$item['description']}}</p>
-        <a href="">{{route('comic.show', $item->$id)}}</a>
+        <a href="{{ route('comic.show', $item->id) }}"> Show</a>
         <p>Price: {{$item['price']}}$</p>
         <p>Series: {{$item['series']}}</p>
         <p>Date: {{$item['sale_date']}}</p>

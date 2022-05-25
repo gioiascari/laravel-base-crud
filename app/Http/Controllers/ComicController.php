@@ -43,10 +43,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Comic $card)
+    public function show(Comic $item)
     {
-        //Non esce
-        return view('comic.show', compact('card') );
+        return view('comic.show', compact('item') );
 
     }
 
