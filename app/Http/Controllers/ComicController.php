@@ -92,7 +92,7 @@ class ComicController extends Controller
     {
         $comic = Comic::find($id);
         $comic->delete();
-        return redirect()->route('comic.index', compact('comic'));
+        return redirect()->route('comic.index', compact('comic')) ;
 
     }
 }
