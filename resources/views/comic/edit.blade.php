@@ -1,5 +1,5 @@
 
-<form action="{{ route('comic.update', ['id' => '$comic->id']) }}" method="POST">
+<form action="{{ route('comic.update', '$comic->id') }}" method="POST">
     @csrf
 
     @method('PUT')
