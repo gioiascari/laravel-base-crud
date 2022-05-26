@@ -11,6 +11,8 @@
 
 
     <a href="{{ route('comic.create') }}"> Aggiungi </a>
+
+
     @foreach ($data as $item)
     <p>{{$item->id}}</p>
 
@@ -21,6 +23,7 @@
         <p>Price: {{$item->price}}$</p>
         <p>Date: {{$item->sale_date}}</p>
         <p>Type: {{$item->type}}</p>
+
         <a href="{{ route('comic.show' , $item->id) }}"> Show Description</a>
         <a href="{{ route('comic.edit' , $item->id) }}"> Modifca </a>
 
