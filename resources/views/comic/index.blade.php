@@ -20,6 +20,7 @@
         <p>Date: {{$item->sale_date}}</p>
         <p>Type: {{$item->type}}</p>
         <a href="{{ route('comic.show' , $item->id) }}"> Show Description</a>
+        <a href="{{ route('comic.create' , $item->id) }}"> Show </a>
 
     @endforeach
 
