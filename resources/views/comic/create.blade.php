@@ -23,9 +23,6 @@
     <input type="text" name='type'>
 
 
-
-
-
     <input type="submit" value="invia">Invia
 
 </form>
