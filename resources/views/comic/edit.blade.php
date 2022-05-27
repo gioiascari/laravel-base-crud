@@ -4,6 +4,7 @@
 <div class="flex-form">
 
     <div class="style-form">
+
         <h1>Edit Me</h1>
         <form action="{{ route('comic.update',  $comic->id) }}" method="POST">
             @csrf
