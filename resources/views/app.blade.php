@@ -10,9 +10,9 @@
 </head>
 <body>
     <!-- Header -->
-    @include('partials.header')
+    @include('comic.header')
 
-    @include('partials.jumbotron')
+    @include('comic.jumbotron')
    <!-- / Header -->
     <!-- Main -->
 
@@ -20,7 +20,7 @@
     <!-- / Main -->
 
     <!-- Footer -->
-    @include ('partials.footer')
+    @include ('comic.footer')
     <!-- /Footer -->
     <script src="/js/carousel.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>

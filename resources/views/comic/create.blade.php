@@ -1,3 +1,7 @@
+@extends('app')
+
+@section('main')
+
 <form action="{{ route('comic.store') }}" method="POST">
     @csrf
 
@@ -26,4 +30,5 @@
     <input type="submit" value="invia">Invia
 
 </form>
+@endsection
 
