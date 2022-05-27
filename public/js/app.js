@@ -19378,29 +19378,27 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // const deleteBtn = document.querySelector("#bomba");
-// console.log("ok js:)");
-// deleteBtn.addEventListener("click", () => {
-//     cliccalo();
-// });
-// function cliccalo() {
-//     // console.log("lol");
-//     let text = "Are You sure?";
-//     if (confirm(text) == true) {
-//         text = "You pressed OK!";
-//     } else {
-//         text = "You canceled!";
-//     }
-// }
-// function validate(form) {
-//     // validation code here ...
-//     if (!valid) {
-//         alert("Please correct the errors in the form!");
-//         return false;
-//     } else {
-//         return confirm("Do you really want to submit the form?");
-//     }
-// }
+var _require = __webpack_require__(/*! axios */ "./node_modules/axios/index.js"),
+    Axios = _require["default"];
+
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+var deleteBtn = document.querySelectorAll(".bomba");
+console.log("ok js:)");
+deleteBtn.forEach(function (element) {
+  element.addEventListener("click", function ($event) {
+    var answer = confirm("Are you sure?");
+
+    if (!answer) {
+      $event.preventDefault();
+    } // Questo sotto è un'altro metodo utilizzabile
+    // const id = $event.target.id;
+    // console.log("delete", id);
+    // Al posto di inserire axios.get come sono abituata c'è anche questa funzionalità 'delete' dovrei però andare nel file index e prendermi l'id
+    // Axios.delete("/comic/" + id);
+
+  });
+});
 
 /***/ }),
 

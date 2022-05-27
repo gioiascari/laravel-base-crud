@@ -1,30 +1,19 @@
+const { default: Axios } = require("axios");
+
 require("./bootstrap");
+const deleteBtn = document.querySelectorAll(".bomba");
+console.log("ok js:)");
 
-// const deleteBtn = document.querySelector("#bomba");
-
-// console.log("ok js:)");
-
-// deleteBtn.addEventListener("click", () => {
-//     cliccalo();
-// });
-
-// function cliccalo() {
-//     // console.log("lol");
-//     let text = "Are You sure?";
-//     if (confirm(text) == true) {
-//         text = "You pressed OK!";
-//     } else {
-//         text = "You canceled!";
-//     }
-// }
-
-// function validate(form) {
-//     // validation code here ...
-
-//     if (!valid) {
-//         alert("Please correct the errors in the form!");
-//         return false;
-//     } else {
-//         return confirm("Do you really want to submit the form?");
-//     }
-// }
+deleteBtn.forEach((element) => {
+    element.addEventListener("click", ($event) => {
+        const answer = confirm("Are you sure?");
+        if (!answer) {
+            $event.preventDefault();
+        }
+        // Questo sotto è un'altro metodo utilizzabile
+        // const id = $event.target.id;
+        // console.log("delete", id);
+        // Al posto di inserire axios.get come sono abituata c'è anche questa funzionalità 'delete' dovrei però andare nel file index e prendermi l'id
+        // Axios.delete("/comic/" + id);
+    });
+});
