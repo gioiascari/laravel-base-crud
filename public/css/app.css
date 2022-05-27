@@ -124,6 +124,22 @@ header .search-input input:focus-visible {
   font-weight: 700;
 }
 
+.main input {
+  margin-top: 10px;
+  color: #0282f9;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.main input:hover {
+  background-color: #0282f9;
+  color: white;
+  cursor: pointer;
+}
+
 .main .container-main {
   width: 80%;
 }
@@ -141,6 +157,11 @@ header .search-input input:focus-visible {
   justify-content: center;
 }
 
+.main .btn-container a {
+  text-decoration: none;
+  color: white;
+}
+
 .cards-thumb {
   padding: 20px 0px;
   width: calc(16.6666666667% - 12.5px);
@@ -156,6 +177,11 @@ header .search-input input:focus-visible {
   -o-object-position: top;
      object-position: top;
   width: 100%;
+}
+
+.cards-thumb a {
+  text-decoration: none;
+  color: white;
 }
 
 .cards-container {
@@ -182,7 +208,20 @@ header .search-input input:focus-visible {
   width: 100px;
 }
 
+.cards-container .edit-btn {
+  padding-top: 10px;
+}
+
+.cards-container .edit-btn a {
+  text-decoration: none;
+  color: white;
+}
+
 .cards-container p {
+  color: #66615c;
+}
+
+.cards-container h4 {
   color: white;
 }
 
@@ -493,6 +532,11 @@ footer nav ul li a:hover {
   padding: 10px 0px;
   border: none;
   border-bottom: 1px solid rgba(2, 130, 249, 0.3019607843);
+}
+
+.flex-form .style-form form input:focus-visible {
+  border-radius: 10px;
+  outline: 1px solid rgba(2, 130, 249, 0.3019607843);
 }
 
 .flex-form .style-form h1 {

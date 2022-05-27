@@ -17,21 +17,24 @@
                     <a href="{{ route('comic.show' , $item->id) }}">
                         <img class="w-100" src="{{ $item->thumb }}" alt="{{ $item->title }}">
                      </a>
-                    <h1>Title: {{$item->title}}</h1>
+                    <h4>Title: {{$item->title}}</h4>
 
                     <p>Price: {{$item->price}}$</p>
                     <p>Date: {{$item->sale_date}}</p>
                     <p>Type: {{$item->type}}</p>
 
+                     <div class="edit-btn">
+                    <a href="{{ route('comic.edit' , $item->id) }}"> Edit </a>
 
-                    <a href="{{ route('comic.edit' , $item->id) }}"> Modifca </a>
+                     </div>
+
                     <form action="{{ route('comic.destroy',  $item->id) }}" method="POST" >
                         {{-- Posso utilizzare anche il metodo onsubmit nel form direttamente, ma tramite la consegna dell'esercizio utilizzo addEventListener sul file script così utilizzo il file js--}}
                         {{-- onsubmit="return confirm('Do you really want to delete the comic?');" --}}
                         @csrf
                         @method('DELETE')
 
-                        <input type="submit" value="Cancella" class="bomba">
+                        <input type="submit" value="Delete" class="bomba">
 
 
                     </form>

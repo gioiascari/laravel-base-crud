@@ -109,6 +109,20 @@ header {
     justify-content: center;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
+    input {
+        margin-top: 10px;
+        color: #0282f9;
+        border-radius: 5px;
+        background-color: white;
+        border: none;
+        padding: 10px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            background-color: #0282f9;
+            color: white;
+            cursor: pointer;
+        }
+    }
     .container-main {
         width: 80%;
     }
@@ -122,6 +136,10 @@ header {
         width: 100%;
         display: flex;
         justify-content: center;
+        a {
+            text-decoration: none;
+            color: white;
+        }
     }
 }
 // Cards
@@ -135,6 +153,10 @@ header {
         object-fit: cover;
         object-position: top;
         width: 100%;
+    }
+    a {
+        text-decoration: none;
+        color: white;
     }
 }
 
@@ -158,7 +180,18 @@ header {
             }
         }
     }
+    .edit-btn {
+        padding-top: 10px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
     p {
+        color: #66615c;
+    }
+    h4 {
         color: white;
     }
 }
@@ -439,6 +472,7 @@ footer nav {
         form {
             display: flex;
             flex-direction: column;
+
             label {
                 padding: 10px 0px;
                 font-weight: bold;
@@ -447,6 +481,10 @@ footer nav {
                 padding: 10px 0px;
                 border: none;
                 border-bottom: 1px solid #0282f94d;
+                &:focus-visible {
+                    border-radius: 10px;
+                    outline: 1px solid #0282f94d;
+                }
             }
         }
         h1 {
