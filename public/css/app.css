@@ -465,3 +465,59 @@ footer nav ul li a:hover {
   filter: brightness(200%);
 }
 
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-form .style-form {
+  width: 50%;
+  padding: 3rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.flex-form .style-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-form .style-form form label {
+  padding: 10px 0px;
+  font-weight: bold;
+}
+
+.flex-form .style-form form input {
+  padding: 10px 0px;
+  border: none;
+  border-bottom: 1px solid rgba(2, 130, 249, 0.3019607843);
+}
+
+.flex-form .style-form h1 {
+  text-align: center;
+  color: #0282f9;
+}
+
+.flex-form .style-form .invia {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.flex-form .style-form .invia input {
+  color: #0282f9;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.flex-form .style-form .invia input:hover {
+  background-color: #0282f9;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+

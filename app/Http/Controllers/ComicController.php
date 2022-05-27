@@ -83,7 +83,7 @@ class ComicController extends Controller
         $comic = Comic::find($id);
         $comic->fill($data);
         $comic->save();
-        return redirect()->route('comic.show', compact('comic'));
+        return redirect()->route('comic.index', compact('comic'));
     }
 
     /**
